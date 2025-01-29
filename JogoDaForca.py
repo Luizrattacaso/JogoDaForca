@@ -5,28 +5,10 @@ from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
 from kivy.uix.popup import Popup
 from kivy.uix.boxlayout import BoxLayout
-import random
 
-# Lista de palavras com suas respectivas dicas
-palavras_com_dicas = [
-    {"palavra": "amor", "dica": "Sentimento forte de afeto."},
-    {"palavra": "felicidade", "dica": "Estado de contentamento."},
-    {"palavra": "universo", "dica": "Tudo o que existe ao nosso redor."},
-    {"palavra": "coração", "dica": "Órgão vital do corpo humano."},
-    {"palavra": "alegria", "dica": "Sentimento de prazer e contentamento."},
-    {"palavra": "escola", "dica": "Lugar onde se aprende."},
-    {"palavra": "biblioteca", "dica": "Local que reúne livros."},
-    {"palavra": "computador", "dica": "Máquina usada para processar informações."},
-    {"palavra": "tristeza", "dica": "Sentimento de dor emocional."},
-    {"palavra": "obsoleto", "dica": "Algo que está fora de uso ou antiquado."},
-    {"palavra": "taciturno", "dica": "Pessoa que fala pouco ou é reservada."},
-    {"palavra": "habitual", "dica": "Algo que acontece com frequência."},
-    {"palavra": "rotineiro", "dica": "Relacionado a rotina, algo repetitivo."},
-    {"palavra": "carro", "dica": "Veículo motorizado usado para transporte."},
-    {"palavra": "cristalino", "dica": "Algo que é claro e transparente."},
-    {"palavra": "rapadura", "dica": "Doce tradicional feito de cana-de-açúcar."},
-    {"palavra": "ordem", "dica": "Estado de organização."}
-]
+
+from texto import palavras_com_dicas
+import random
 
 class ForcaApp(App):
     def build(self):
