@@ -12,7 +12,7 @@ import random
 
 Max_tentativas = 6
 
-class ForcaApp(App):
+class Adivinhe_A_PalavraApp(App):
     def build(self):
         self.iniciar_jogo()
         layout = BoxLayout(orientation='vertical', padding=10, spacing=10)
@@ -114,10 +114,10 @@ class ForcaApp(App):
             self.erros += 1
             self.pontuacao -= 30
             self.label_pontuacao.text = (f"Pontuação: {self.pontuacao}")
-            self.label_erros.text = f"Tentativas restantes: {Max_tentativas - self.erros}"
+            self.label_erros.text = (f"Tentativas restantes: {Max_tentativas - self.erros}")
 
         if "_ " not in self.exibicao:  #ganha
-            self.exibicao = f"Parabéns, você acertou a palavra: {self.palavra}"
+            self.exibicao = (f"Parabéns, você acertou a palavra: {self.palavra}")
             self.label_palavra.text = self.exibicao
             self.popup_mensagem("Você venceu!")
             self.desabilitar_input()
@@ -162,4 +162,4 @@ class ForcaApp(App):
             self.label_palavra.color = (1, 0, 0, 1)  # Vermelho para derrota
 
 if __name__ == '__main__':
-    ForcaApp().run()
+    Adivinhe_A_PalavraApp().run()
