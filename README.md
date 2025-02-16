@@ -1,2 +1,2 @@
 # JogoDaForca
-Jogo da forca utilizando a biblioteca Kivy.
+Projeto da faculdade para um jogo da forca utilizando a biblioteca Kivy.
