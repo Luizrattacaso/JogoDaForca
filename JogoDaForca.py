@@ -14,7 +14,7 @@ class Adivinhe_A_PalavraApp(App):
     def build(self):
         self.iniciar_jogo()
         layout = BoxLayout(orientation='vertical', padding=10, spacing=10)
-        
+
         #palavra
         self.label_palavra = Label(text=self.exibicao, font_size=30)
         layout.add_widget(self.label_palavra)
@@ -135,6 +135,7 @@ class Adivinhe_A_PalavraApp(App):
         self.label_palavra.text = self.exibicao
         self.label_erros.text = f"Tentativas restantes: {Max_tentativas - self.erros}"
         self.label_pontuacao.text = f"Pontuação: {self.pontuacao}"
+        self.label_dica.text = f"Dica: {self.dica}"
         self.text_input.text = ""
         self.text_input.disabled = False
 
